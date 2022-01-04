@@ -16,7 +16,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .exposedHeaders("Access-Control-Allow-Headers", "Authorization, x-xsrf-token, Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, " +
                         "Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers")
-                .allowedOrigins("http://localhost:3000", "http://someserver:8080")
+                .allowedOrigins("http://localhost:3000","https://myfriendsbook.netlify.app")
                 .allowedMethods("HEAD", "OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE")
                 .maxAge(MAX_AGE_SECS);
         
