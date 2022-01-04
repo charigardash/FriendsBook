@@ -60,4 +60,12 @@ public class FriendServiceImp implements FriendService {
 		friendRepository.deleteById(id);
 	}
 
+
+
+	@Override
+	public List<Friend> findFriend(String keyWord) {
+		// TODO Auto-generated method stub
+		return friendRepository.findByNameContaining(keyWord);
+	}
+
 }

@@ -10,4 +10,5 @@ public interface FriendService {
 	void addFriend(Friend friend);
 	Friend findFriend(long id);
 	void removeFriend(long id);
+	List<Friend> findFriend(String keyWord);
 }
